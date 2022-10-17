@@ -7,8 +7,10 @@ const Server = require(`../src`);
 const logger = require(`../src/core/logger`);
 const { version } = require(`../package.json`);
 
+const definitionPort = config.get(`server.port`);
+
 const opts = {
-	port: config.get(`server.port`),
+	port:  definitionPort || 8080,
 	playground: process.env.PLAYGROUND
 };
 
