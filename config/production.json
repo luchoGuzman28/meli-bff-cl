@@ -1,7 +1,7 @@
 {
     "endpoints": {
         "api-meli": {
-            "uri": "https://meli-api-cl.herokuapp.com/"
+            "uri": "https://meli-api-cl.herokuapp.com"
         }
     },
     "loggingLevel": "info",

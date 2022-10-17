@@ -1,4 +1,54 @@
-# import Query.* from "./definitions/profile/schema.graphql"
+type Query {
+	getUserInformation(userId: Int!): UserInfo
+	getUserPurchases(userId: Int!): [Purchase]
+	getPayment(paymentId:Int): Payment
+	getShipment(shipmentId: Int): Shipment
+	getLevel(levelId:String!): Level
+}
+
+type UserInfo {
+  name: String!
+  lastName: String!
+  level: String!
+  image: String
+}
+
+type Payment {
+  id_transaccion: Int
+  estado: String
+}
+
+type Price {
+   total: Float
+   currency: String
+}
+
+type Seller {
+	id: Int
+	nickname: String
+}
+
+type Shipment {
+	id_envio: Int
+	estado: String
+}
+
+type Level {
+	id_nivel: String!
+	descripcion: String
+}
+
+type Purchase {
+	purchase_id: String!
+	title: String!
+	price: Price!
+	quantity: Int!
+	date: String
+	image: String
+	seller: Seller
+	transaction_id: Int
+    send_id: Int
+}
 
 type Query {
 	info: String!

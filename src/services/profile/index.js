@@ -5,18 +5,16 @@ const MELI_API_ENDPOINT = config.get(`endpoints.api-meli.uri`);
 
 const getUserInformation = async userId => {
 	const uri = `${MELI_API_ENDPOINT}/user/${userId}`;
-	let orderInfo = {};
 	try {
 		const userProfile = await request({ uri, json: true });
-        return userProfile;
+		return userProfile;
 	} catch (err) {
 		throw err;
 	}
 };
 
-
 const getUserPurchases = async userId => {
-	const uri = `${MELI_API_ENDPOINT}/user/${userId}`;
+	const uri = `${MELI_API_ENDPOINT}/user/${userId}/purchases`;
 	try {
 		const userPurchases = await request({ uri, json: true });
         return userPurchases;
