@@ -1,7 +1,7 @@
 {
-	"name": "bff-meli",
+	"name": "bff-meli-cl",
 	"version": "1.0.0",
-	"description": "bff-meli",
+	"description": "bff-meli-cl",
 	"main": "index.js",
 	"keywords": [
 		"bff",
