@@ -6,6 +6,6 @@
     },
     "loggingLevel": "info",
     "server": {
-        "port": 8085
+        "port": 3000
     }
 }
