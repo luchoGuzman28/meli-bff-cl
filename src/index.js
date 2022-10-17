@@ -1,4 +1,3 @@
-/* istanbul ignore file */
 'use strict';
 const { GraphQLServer } = require(`graphql-yoga`);
 
@@ -26,7 +25,6 @@ Server.express.get(`/health`, function(req, res) {
 			profile: config.util.getEnv(`NODE_ENV`),
 			name,
 			version,
-			cluster: config.util.getEnv(`CLUSTER`),
 			logging: {
 				level: config.get(`loggingLevel`)
 			}
