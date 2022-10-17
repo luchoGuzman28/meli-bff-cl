@@ -1,0 +1,30 @@
+{
+	"coverageThreshold": {
+		"global": {
+			"branches": 84,
+			"functions": 91,
+			"lines": 93,
+			"statements": 93
+		}
+	},
+	"testPathIgnorePatterns": [
+		"/node_modules/",
+		".stryker-tmp"
+	],
+	"collectCoverageFrom": [
+		"src/**/*.js"
+	],
+	"coveragePathIgnorePatterns": [
+		"/test/",
+		"/node_modules/",
+		".stryker-tmp",
+		"/src/core/util/init-db"
+	],
+	"testEnvironment": "node",
+	"testRegex": "test/.*\\.test\\.js$",
+	"moduleFileExtensions": [
+		"ts",
+		"js",
+		"json"
+	]
+}

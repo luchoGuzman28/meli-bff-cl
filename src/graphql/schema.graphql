@@ -1,0 +1,5 @@
+# import Query.* from "./definitions/profile/schema.graphql"
+
+type Query {
+	info: String!
+}
