@@ -10,7 +10,7 @@ const { version } = require(`../package.json`);
 const definitionPort = config.get(`server.port`);
 
 const opts = {
-	port:  3000,
+	port: process.env.PORT || 3000,
 	playground: process.env.PLAYGROUND
 };
 
