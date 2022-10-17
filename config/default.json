@@ -1,0 +1,11 @@
+{
+    "endpoints": {
+        "api-meli": {
+            "uri": "https://meli-api-cl.herokuapp.com/"
+        }
+    },
+    "loggingLevel": "info",
+    "server": {
+        "port": 8085
+    }
+}
